@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken, clearToken, history } from "../helpers/utility";
 
-const webAPIHost = process.env.REACT_APP_WEB_API_HOST;
+const webAPIHost = 'https://gmart-api.onrender.com/';
 
 function getAPIHeader() {
   const token = getToken();
