@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken, clearToken, history } from "../helpers/utility";
 
-const webAPIHost = 'https://gmart-api.onrender.com/';
+const webAPIHost = 'https://gmart-api.onrender.com';
 
 function getAPIHeader() {
   const token = getToken();
