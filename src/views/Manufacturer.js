@@ -95,7 +95,7 @@ const Manufacturer = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ paddingLeft: "50px" }}>
       <div>
         <label>
           Name:
@@ -104,6 +104,7 @@ const Manufacturer = () => {
             name="name"
             value={manufacturerData.name}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -115,6 +116,7 @@ const Manufacturer = () => {
             name="keywords"
             value={manufacturerData.keywords}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -126,6 +128,7 @@ const Manufacturer = () => {
             name="description"
             value={manufacturerData.description}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>{" "}
@@ -137,6 +140,7 @@ const Manufacturer = () => {
             name="brand"
             value={manufacturerData.brand}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -151,6 +155,7 @@ const Manufacturer = () => {
             name="location"
             value={manufacturerData.location}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -163,6 +168,7 @@ const Manufacturer = () => {
             name="rating"
             value={manufacturerData.rating || ""}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>{" "}
@@ -175,6 +181,7 @@ const Manufacturer = () => {
             name="website"
             value={manufacturerData.website || ""}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -186,6 +193,7 @@ const Manufacturer = () => {
             name="lat"
             value={manufacturerData.lat || ""}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -197,6 +205,7 @@ const Manufacturer = () => {
             name="lng"
             value={manufacturerData.lng || ""}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -209,6 +218,7 @@ const Manufacturer = () => {
             name="userId"
             value={manufacturerData.userId || ""}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -221,6 +231,7 @@ const Manufacturer = () => {
             name="photos"
             value={manufacturerData.photos}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
@@ -233,11 +244,11 @@ const Manufacturer = () => {
             name="contactInfo"
             value={manufacturerData.contactInfo}
             onChange={handleChange}
+            className="form-control search-input"
           />
         </label>
       </div>
-      {/* Add other input fields for the remaining properties in a similar manner */}
-      <button type="submit">Submit</button>
+      <button type="submit" className="btn btn-primary action-button">Submit</button>
     </form>
   );
 };
