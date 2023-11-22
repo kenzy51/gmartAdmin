@@ -13,6 +13,7 @@ const Sidebar = function () {
         { name: 'Orders', link: '/orders', icon: 'file-text-o' },
         { name: 'Privacy Policy', link: '/privacy', icon: 'lock' },
         { name: 'Terms & conditions', link: '/terms', icon: 'file-text' },
+        { name: 'Manufacturer', link: '/manufacturer', icon: '' },
     ]
     const location = useLocation();
     

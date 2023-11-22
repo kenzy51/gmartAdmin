@@ -4,6 +4,7 @@ import {  BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from '
 import { getToken, history } from '@src/lib/helpers/utility'
 import Loader from '@src/components/common/Loader'
 import ErrorBoundary from '@src/layout/ErrorBoundary'
+import Manufacturer from '../views/Manufacturer'
 const AdminLayout = lazy(() => import('@src/layout/AdminLayout'))
 const Login = lazy(() => import('@src/views/Login'))
 const Dashboard = lazy(() => import('@src/views/Dashboard'))
@@ -40,6 +41,7 @@ const App = () => (
                         <Route exact path="/orders" element={<ProtectedRoute><Order /></ProtectedRoute>} />
                         <Route exact path="/privacy" element={<ProtectedRoute><Privacy /></ProtectedRoute>} />
                         <Route exact path="/terms" element={<ProtectedRoute><Terms /></ProtectedRoute>} />
+                        <Route exact path="/manufacturer" element={<ProtectedRoute><Manufacturer /></ProtectedRoute>} />
                     </Route>
                     <Route path="*" element={<NotFound />} />
                 </Routes>
