@@ -14,6 +14,7 @@ const Sidebar = function () {
         { name: 'Privacy Policy', link: '/privacy', icon: 'lock' },
         { name: 'Terms & conditions', link: '/terms', icon: 'file-text' },
         { name: 'Manufacturer', link: '/manufacturer', icon: '' },
+        { name: 'Add Product', link: '/addProduct', icon: '' },
     ]
     const location = useLocation();
     
